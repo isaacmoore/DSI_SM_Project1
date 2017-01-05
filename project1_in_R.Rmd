@@ -1,0 +1,72 @@
+---
+title: "Project 1"
+output: html_notebook
+author: Isaac Moore
+---
+
+Loading packages
+```{r}
+library("tidyverse")
+```
+
+```{r}
+data_path <- "assets/sat_scores.csv"
+```
+
+###Step 1: Open the sat_scores.csv file. Investigate the data, and answer the questions below.
+
+**1. What does the data describe?**  
+*This data provides mean results for Math and Verbal scores for students taking the SAT in the year 2001, from each state, and the participation rate for each state. This data was taken from the College Board.*
+
+**2. Does the data look complete? Are there any obvious issues with the observations?**  
+*The data colected for Math and Verbal are averages for each state, not the actual results - We are not aware of the methods for collecting the dat. The data also contatins a total for each column, which would not return accurate calculations - this summary data will be removed.*
+
+###Step 2: Load the data.
+**3. Create a data dictionary for the dataset.**  
+*I will instead be loading the data into a dplyr data frame, using the read.csv function*  
+
+**4. Load the data into a list of lists**  
+*Not necessary...*  
+
+**5. Print the data**  
+```{r}
+data <- tbl_df(read.csv(data_path))
+head(data)
+tail(data)
+```
+
+There is a summary observation (row) at the end of the dataset, I will remove the obsevation.
+```{r}
+dim(data)
+```
+```{r}
+data <- data[1:51,]
+```
+
+```{r}
+dim(data)
+```
+
+**6. Extract a list of the labels from the data, and remove them from the data.**  
+```{r}
+names(data)
+```
+
+**7. Create a list of State names extracted from the data.**   
+```{r}
+state_names <- unique(data$State)
+state_names
+```
+**8. Print the types of each column**  
+```{r}
+str(data)
+```
+
+**9. Do any types need to be reassigned? If so, go ahead and do it.**  
+*Nope, Factor works for the State column - Considered converting to character, but not necessary.  Integer is fine for observations in Rate, Verbal, and Math.*
+
+**10. Create a dictionary for each column mapping the State to its respective value for that column.**  
+```{r}
+
+```
+
