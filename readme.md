@@ -1,5 +1,5 @@
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 1: SAT Scores + Summary Statistics
+#General Assembly Project 1: SAT Scores + Summary Statistics
 
 ### Overview
 
@@ -11,4 +11,6 @@ For our first project, we're going to take a look at SAT scores around the Unite
 
 ---
 
-###The project was completed in Python during the immersive program. The project was later completed in R 4 months after the program.
+###The project was completed in Python during the immersive program. 
+###The project was later completed in R 4 months after the program.
+[http://rpubs.com/isaacmoore/246170]()
