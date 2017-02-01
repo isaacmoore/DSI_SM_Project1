@@ -13,4 +13,4 @@ For our first project, we're going to take a look at SAT scores around the Unite
 
 ###The project was completed in Python during the immersive program. 
 ###The project was later completed in R 4 months after the program.
-[http://rpubs.com/isaacmoore/246170]()
+[http://rpubs.com/isaacmoore/246170](http://rpubs.com/isaacmoore/246170)
