@@ -91,17 +91,16 @@ cat("Math min", min(data$Math), "- Math max", max(data$Math), "\n")
 Since there is no list comprehension in R - I'm just going to write a normal funciton.
 ```{r}
 my_std <- function(x){
-         mu <- mean(x)
-         step2 <- 0
-         for(i in x){
-                 step2 <- (i - mu)^2 + step2
-         }
-         step3 <- (1/length(x)) * mean(step2)
-         return(sqrt(step3))
+        n <- length(x)
+        return(sqrt(sum((x - mean(x))^2) / (n - 1)))
 }
+
 my_std(data$Rate)
+sd(data$Rate)
 my_std(data$Verbal)
+sd(data$Verbal)
 my_std(data$Math)
+sd(data$Math)
 ```
 
 
